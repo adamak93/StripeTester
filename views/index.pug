@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+  include partials/head.pug
+
+  body
+    include partials/nav.pug
+
+    .container
+      .page-header: h1 Connect your business or organization to Nibble!
+
+      p.lead Click below to link your existing Stripe account or create a new one!
+
+      p: a.btn.btn-primary.btn-block.btn-xl(
+        data-loading-text='Connecting...'
+        href=redirectUri
+        ) Connect to Stripe
+
+    include partials/footer.pug
